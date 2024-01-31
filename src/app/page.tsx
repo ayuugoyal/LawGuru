@@ -1,7 +1,11 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Helllo World</h1>
+    <div className="flex justify-center h-screen items-center">
+      <Link href="/dashboard">
+        <div>Get Started</div>
+      </Link>
     </div>
   );
 }
