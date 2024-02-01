@@ -10,16 +10,20 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.5",
-    "next": "14.1.0",
+    "@vercel/postgres": "^0.7.2",
+    "drizzle-orm": "^0.29.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pg": "^8.11.0",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "daisyui": "^4.6.1",
+    "drizzle-kit": "^0.20.13",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
