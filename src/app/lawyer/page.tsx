@@ -1,9 +1,6 @@
-import Chat from "@/components/Chat";
 import NavBar from "@/components/NavBar";
 import React from "react";
-import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
-import Footer from "@/components/Footer";
 
 const page = () => {
   return (
