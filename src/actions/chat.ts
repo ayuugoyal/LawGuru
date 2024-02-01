@@ -24,6 +24,24 @@ export async function create_chat(message: string) {
     }
 }
 
+export async function get_chats() {
+    try {
+        const { userId: user_id } = auth();
+        if (!user_id) {
+            throw new Error('user not auth');
+        }
+
+        return db
+            .select()
+            .from(chat)
+            .where(eq(chat.user_id, user_id));
+
+    } catch (e: any) {
+        console.log(e);
+        throw e;
+    }
+}
+
 export async function get_all_messages(chatId: string) {
     try {
         const { userId: user_id } = auth();

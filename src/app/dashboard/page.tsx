@@ -3,7 +3,7 @@ import React, { FormEvent } from "react";
 import { create_chat } from "@/actions/chat";
 import { useRouter } from "next/navigation";
 
-export default function page() {
+export default function Page() {
   const router = useRouter();
 
   const handle_submit = async (event: FormEvent<HTMLFormElement>) => {
