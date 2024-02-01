@@ -21,7 +21,13 @@ LawGuru is built using the following technologies:
 - **TypeScript:** Ensures a statically-typed and more maintainable codebase.
 - **Clerk:** Authentication services for secure user interactions.
 - **Vercel:** Deployment platform for seamless hosting.
-- **Machine Learning Model:** Enhances chatbot capabilities for better responses.
+- **FastAPI:** FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints.
+- **Hugging Face Transformers:** Transformers is an open-source library released by Hugging Face that provides state-of-the-art natural language processing (NLP) models, including pre-trained models for various tasks.
+- **LangChain:** LangChain is a library for building language models and chains. It provides functionalities for embeddings, retrieval, and language models.
+- **Uvicorn:** Uvicorn is an ASGI server that allows running asynchronous web applications. It is used here to serve the FastAPI application.
+- **Chroma:** Chroma is a vector store library used for creating and interacting with vector stores.
+- **LangChain:** LangChain is a library for building language models and chains. It provides functionalities for embeddings, retrieval, and language models.
+- **Sentence Transformer:** Sentence Transformer is a library for computing sentence embeddings using transformer-based models. In this project, it is used to generate embeddings for question similarity.
 
 ## Getting Started
 
