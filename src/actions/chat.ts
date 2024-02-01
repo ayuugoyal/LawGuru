@@ -17,6 +17,17 @@ export async function create_chat(message: string) {
             .insert(messages)
             .values({ chat_id: res[0].id, sender: user_id, content: message });
 
+        const result = await fetch(process.env.AI_BACKEND_URL!, {
+            method: 'POST',
+            body: JSON.stringify({
+                question: message,
+            }),
+        }).then((res) => res.json())
+            .then((res) => res.answer.result);
+
+        db.insert(messages)
+            .values({ chat_id: res[0].id, sender: 'robot', content: result });
+
         return res[0];
     } catch (e: any) {
         console.log(e);
@@ -99,7 +110,11 @@ export async function send_message(chatId: string, message: string): Promise<Mes
                 question: message,
             }),
         }).then((res) => res.json());
+
+        console.log(res);
+
         const result = res.answer.result;
+
         return db
             .insert(messages)
             .values({ chat_id: chatId, sender: 'robot', content: result })
