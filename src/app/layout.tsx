@@ -8,6 +8,7 @@ import { auth } from "@clerk/nextjs";
 import { UserButton } from "@clerk/nextjs";
 import NavBar from "@/components/NavBar";
 import { dark } from "@clerk/themes";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,11 +29,17 @@ export default function RootLayout({
         baseTheme: dark,
       }}
     >
-      <html data-theme="light" lang="en">
+      <html data-theme="dark" lang="en">
         <body className={inter.className}>
           <div className="h-screen flex justify-between flex-col items-center">
-            <div className="navbar bg-base-100 sm:px-16">
+            <div className="navbar shadow-xl bg-base-100 sm:px-16">
               <div className="navbar-start">
+                <Image
+                  src="/lawlogo1.png"
+                  alt="LawGuru"
+                  width={50}
+                  height={50}
+                />
                 <a className="btn btn-ghost text-xl">LawGuru</a>
               </div>
               <div className="navbar-end gap-3">
@@ -54,7 +61,7 @@ export default function RootLayout({
                   <input
                     type="checkbox"
                     className="theme-controller"
-                    value="dark"
+                    value="light"
                   />
                   <svg
                     className="swap-on fill-current w-7 h-7"
@@ -73,6 +80,8 @@ export default function RootLayout({
                 </label>
               </div>
             </div>
+            <div></div>
+            <div></div>
             {children}
             {user_id ? (
               <div className="fixed bottom-4">
