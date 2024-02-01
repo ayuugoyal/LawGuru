@@ -1,17 +1,20 @@
 'use client';
 
-import Chat from "@/components/Chat";
 import NavBar from "@/components/NavBar";
-import React from "react";
+import React, { FormEvent } from "react";
 import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import { create_chat } from "@/actions/chat";
+import { useRouter } from "next/navigation";
 
-const page = () => {
+export default function page() {
+    const router = useRouter()
 
-    const handle_submit = async (e: any) => {
-        let res = await create_chat();
-        console.log(res.id);
+    const handle_submit = async (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const message = document.querySelector<HTMLInputElement>('#message')!.value;
+        const res = await create_chat(message);
+        router.push(`/chat/${res.id}`);
     };
 
     return (
@@ -52,17 +55,16 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <div className="rounded-lg shadow-xl p-4 w-2/3">
-                <Chat />
-
+            <form className="rounded-lg shadow-xl p-4 w-2/3" onSubmit={(e) => handle_submit(e)}>
                 <div className="relative flex">
                     <input
+                        id="message"
                         type="text"
                         placeholder="Type your query here"
                         className="input input-bordered w-full"
                     />
                     <div className="absolute right-0 items-center inset-y-0 flex">
-                        <button type="button" className="p-3" onClick={handle_submit}>
+                        <button type="submit" className="p-3">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
@@ -74,7 +76,7 @@ const page = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            </form>
             <div></div>
             <div className="fixed bottom-0">
                 <NavBar />
@@ -82,5 +84,3 @@ const page = () => {
         </div>
     );
 };
-
-export default page;

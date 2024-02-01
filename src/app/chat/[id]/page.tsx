@@ -1,6 +1,17 @@
+'use client';
+
+import { get_all_messages } from "@/actions/chat";
 import Image from "next/image";
 
-const Chat = () => {
+export default async function chat({ params }: {
+    params: {
+        id: string
+    }
+}) {
+    const chatId = params.id;
+    const messages = await get_all_messages(chatId);
+    console.log(messages);
+
     return (
         <div>
             <div className="chat chat-start">
@@ -41,6 +52,4 @@ const Chat = () => {
             </div>
         </div>
     );
-};
-
-export default Chat;
+}

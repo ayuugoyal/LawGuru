@@ -5,7 +5,7 @@ import { db } from '@/db/index';
 import { chat, messages } from '@/db/schema';
 import { and, eq } from "drizzle-orm";
 
-export async function create_chat() {
+export async function create_chat(message: string) {
     try {
         const { userId: user_id } = auth();
         if (!user_id) {
@@ -13,6 +13,9 @@ export async function create_chat() {
         }
 
         const res = await db.insert(chat).values({ user_id, title: '' }).returning();
+        await db
+            .insert(messages)
+            .values({ chat_id: res[0].id, sender: user_id, content: message });
 
         return res[0];
     } catch (e: any) {
