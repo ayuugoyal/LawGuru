@@ -23,12 +23,35 @@ LawGuru is built using the following technologies:
 - **Vercel:** Deployment platform for seamless hosting.
 - **Machine Learning Model:** Enhances chatbot capabilities for better responses.
 
-## How to Run
+## Getting Started
 
-1. Clone the repository: `git clone https://github.com/ayuugoyal/LawGuru.git`
-2. Chnage the directory: `cd .\LawGuru`
-3. Install dependencies: `npm install`
-4. Run the app locally: `npm run dev`
+To run this project locally, you'll need to have Node.js and npm installed on your machine.
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ayuugoyal/LawGuru.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd LawGuru
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser to see the terminal application.
 
 ## License
 
