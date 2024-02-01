@@ -1,0 +1,1 @@
+ALTER TABLE "messages" ALTER COLUMN "created_at" SET NOT NULL;

@@ -11,6 +11,6 @@ export const messages = pgTable('messages', {
     id: uuid('id').primaryKey().defaultRandom(),
     chat_id: uuid('chat_id').references(() => chat.id).notNull(),
     content: varchar('content').notNull(),
-    sender: varchar('user_id').notNull(),
-    created_at: timestamp('created_at').default(sql`NOW()`),
+    sender: varchar('sender').notNull(),
+    created_at: timestamp('created_at').default(sql`NOW()`).notNull(),
 });

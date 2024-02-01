@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar";
 import React from "react";
 import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
-import { create_chat } from "@/actions/create_chat";
+import { create_chat } from "@/actions/chat";
 
 const page = () => {
 

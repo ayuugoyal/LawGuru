@@ -1,0 +1,1 @@
+ALTER TABLE "messages" RENAME COLUMN "user_id" TO "sender";
