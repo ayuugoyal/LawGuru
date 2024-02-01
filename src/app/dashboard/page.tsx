@@ -15,6 +15,7 @@ export default function Page() {
 
   return (
     <>
+      <div></div>
       <form
         className="rounded-lg shadow-xl p-4 w-2/3"
         onSubmit={(e) => handle_submit(e)}
@@ -40,7 +41,6 @@ export default function Page() {
           </div>
         </div>
       </form>
-      <div></div>
     </>
   );
 }
