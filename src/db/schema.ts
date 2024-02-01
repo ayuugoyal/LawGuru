@@ -14,3 +14,5 @@ export const messages = pgTable('messages', {
     sender: varchar('sender').notNull(),
     created_at: timestamp('created_at').default(sql`NOW()`).notNull(),
 });
+
+export type Message = typeof messages.$inferSelect;

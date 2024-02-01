@@ -1,9 +1,23 @@
-import NavBar from "@/components/NavBar";
+import { get_chats } from "@/actions/chat";
+import Link from "next/link";
 import React from "react";
-import { UserButton } from "@clerk/nextjs";
 
-const page = () => {
-  return <div></div>;
+const page = async () => {
+    const chats = await get_chats();
+
+    if (chats.length == 0) {
+        return <div>You have no chats yet! </div>;
+    }
+
+    return chats.map((ch) => {
+        return <div className="flex flex-row justify-normal">
+            <Link href={`/chat/${ch.id}`} >
+                <div>
+                    {ch.title == '' ? 'chat' : ch.title}
+                </div>
+            </Link >
+        </div>
+    })
 };
 
 export default page;
