@@ -1,10 +1,19 @@
+'use client';
+
 import Chat from "@/components/Chat";
 import NavBar from "@/components/NavBar";
 import React from "react";
 import { UserButton } from "@clerk/nextjs";
 import Image from "next/image";
+import { create_chat } from "@/actions/create_chat";
 
 const page = () => {
+
+    const handle_submit = async (e) => {
+        let res = await create_chat();
+        console.log(res.id);
+    };
+
     return (
         <div className="h-screen flex justify-between flex-col items-center">
             <div className="rounded-lg p-2 w-full shadow-xl ">
@@ -53,7 +62,7 @@ const page = () => {
                         className="input input-bordered w-full"
                     />
                     <div className="absolute right-0 items-center inset-y-0 flex">
-                        <button type="button" className="p-3">
+                        <button type="button" className="p-3" onClick={handle_submit}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
