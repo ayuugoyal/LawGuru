@@ -1,5 +1,5 @@
-import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,6 +14,15 @@ export default function Home() {
         {/* <div className="hero-overlay bg-opacity-60"></div> */}
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
+            <div className="flex justify-center">
+              <Image
+                src="/lawlogo1.png"
+                className="flex justify-center"
+                alt="LawGuru"
+                width={200}
+                height={200}
+              />
+            </div>
             <h1 className="mb-5 text-5xl font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent">
               Welcome to LawGuru
             </h1>
