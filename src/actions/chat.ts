@@ -102,8 +102,12 @@ export async function get_chat(chatId: string) {
     }
 }
 
-export async function send_message(chatId: string, message: string): Promise<Message> {
+export async function send_message(chatId: string, user_id: string, message: string): Promise<Message> {
     try {
+        await db
+            .insert(messages)
+            .values({ chat_id: chatId, sender: user_id, content: message });
+
         const res = await fetch(process.env.AI_BACKEND_URL!, {
             method: 'POST',
             body: JSON.stringify({

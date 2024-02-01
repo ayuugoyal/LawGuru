@@ -24,7 +24,7 @@ export function ChatMessages({
         const inputElement = document.querySelector<HTMLInputElement>("#message")!;
         const query = inputElement.value;
         inputElement.value = "";
-        const newMessage = await send_message(chatId, query);
+        const newMessage = await send_message(chatId, userId, query);
         console.log(newMessage);
         setMessages([...message, newMessage])
     };
