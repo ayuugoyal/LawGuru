@@ -12,10 +12,11 @@
     "@clerk/nextjs": "^4.29.5",
     "@vercel/postgres": "^0.7.2",
     "drizzle-orm": "^0.29.3",
+    "next": "^14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "zod": "^3.22.4",
-    "react-icons": "^5.0.1"
+    "react-icons": "^5.0.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
