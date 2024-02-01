@@ -80,13 +80,14 @@ export default function RootLayout({
                 </label>
               </div>
             </div>
-            <div></div>
-            <div></div>
             {children}
             {user_id ? (
-              <div className="fixed bottom-4">
-                <NavBar />
-              </div>
+              <>
+                <div className="fixed bottom-4">
+                  <NavBar />
+                </div>
+                <div></div>
+              </>
             ) : (
               <Footer />
             )}

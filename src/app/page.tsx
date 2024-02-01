@@ -18,9 +18,7 @@ export default function Home() {
               Welcome to LawGuru
             </h1>
             <p className="mb-5 text-blue-300">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              your go-to platform for AI-powered legal advice and guidance!
             </p>
             <Link href="/dashboard">
               <button className="btn btn-primary">Get Started</button>
