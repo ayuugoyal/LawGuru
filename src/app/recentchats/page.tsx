@@ -10,7 +10,7 @@ const page = async () => {
     }
 
     return chats.map((ch) => {
-        return <div className="flex flex-row justify-normal">
+        return <div className="flex flex-row justify-normal" key={ch.id}>
             <Link href={`/chat/${ch.id}`} >
                 <div>
                     {ch.title == '' ? 'chat' : ch.title}
