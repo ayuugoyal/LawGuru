@@ -2,6 +2,7 @@ import Chat from "@/components/Chat";
 import NavBar from "@/components/NavBar";
 import React from "react";
 import { UserButton } from "@clerk/nextjs";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -9,7 +10,10 @@ const page = () => {
       <div className="rounded-lg p-2 w-full shadow-xl ">
         <div className="navbar">
           <div className="flex-1">
-            <a className="btn btn-ghost text-xl">LawGuru</a>
+            <Image src="/lawlogo1.png" width={50} height={50} alt="logo" />
+            <a>
+              <div className="btn btn-ghost text-xl">LawGuru</div>
+            </a>
           </div>
           <div className="gap-3">
             <label className="swap swap-rotate">

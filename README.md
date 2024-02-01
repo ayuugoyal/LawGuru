@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LawGuru - AI-Powered Legal Advice Web App
 
-## Getting Started
+Welcome to LawGuru, your go-to platform for AI-powered legal advice and guidance!
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+LawGuru is a cutting-edge web app that employs AI chatbot technology to deliver personalized legal assistance. Designed to simplify the complexities of the law, users can seamlessly navigate various legal topics, ensuring accessibility for all.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Real-time Interaction:** Engage in live conversations, receiving accurate legal information instantly.
+- **Smart Suggestions:** Benefit from intelligent recommendations based on user input and behavior patterns.
+- **Legal Database Access:** Tap into an extensive legal database for relevant statutes and case law.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+LawGuru is built using the following technologies:
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js:** React framework for a robust and efficient frontend.
+- **PostgreSQL:** Backend powered by a reliable and scalable database.
+- **TypeScript:** Ensures a statically-typed and more maintainable codebase.
+- **Clerk:** Authentication services for secure user interactions.
+- **Vercel:** Deployment platform for seamless hosting.
+- **Machine Learning Model:** Enhances chatbot capabilities for better responses.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to Run
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository: `git clone https://github.com/ayuugoyal/LawGuru.git`
+2. Chnage the directory: `cd .\LawGuru`
+3. Install dependencies: `npm install`
+4. Run the app locally: `npm run dev`
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the [MIT License](LICENSE). Feel free to explore, contribute, and provide feedback!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Explore LawGuru [here](https://github.com/ayuugoyal/LawGuru) and embark on a journey of simplified legal interactions!
