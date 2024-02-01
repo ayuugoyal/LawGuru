@@ -25,7 +25,7 @@ export async function create_chat(message: string) {
         }).then((res) => res.json())
             .then((res) => res.answer.result);
 
-        db.insert(messages)
+        await db.insert(messages)
             .values({ chat_id: res[0].id, sender: 'robot', content: result });
 
         return res[0];
