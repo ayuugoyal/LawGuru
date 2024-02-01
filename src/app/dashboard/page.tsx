@@ -9,7 +9,7 @@ import { create_chat } from "@/actions/create_chat";
 
 const page = () => {
 
-    const handle_submit = async (e) => {
+    const handle_submit = async (e: any) => {
         let res = await create_chat();
         console.log(res.id);
     };
