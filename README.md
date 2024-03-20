@@ -1,7 +1,11 @@
 # LawGuru - AI-Powered Legal Advice Web App
 
 Welcome to LawGuru, your go-to platform for AI-powered legal advice and guidance!
-
+Authors: Vaibhav
+         Sarthak Agarwal
+         Ayush Goyal
+         Aman Sharma
+         
 ## Overview
 
 LawGuru is a cutting-edge web app that employs AI chatbot technology to deliver personalized legal assistance. Designed to simplify the complexities of the law, users can seamlessly navigate various legal topics, ensuring accessibility for all.
