@@ -2,10 +2,10 @@
 
 Welcome to LawGuru, your go-to platform for AI-powered legal advice and guidance!
 ## Authors: 
-         Vaibhav <br>
-         Sarthak Agarwal <br>
-         Ayush Goyal <br>
-         Aman Sharma <br>
+         Vaibhav 
+         Sarthak Agarwal 
+         Ayush Goyal 
+         Aman Sharma 
          
 ## Overview
 
