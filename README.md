@@ -1,10 +1,10 @@
 # LawGuru - AI-Powered Legal Advice Web App
 
 Welcome to LawGuru, your go-to platform for AI-powered legal advice and guidance!
-Authors: Vaibhav
-         Sarthak Agarwal
-         Ayush Goyal
-         Aman Sharma
+Authors: Vaibhav <br>
+         Sarthak Agarwal <br>
+         Ayush Goyal <br>
+         Aman Sharma <br>
          
 ## Overview
 
