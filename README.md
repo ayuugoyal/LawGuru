@@ -1,6 +1,9 @@
 # LawGuru - AI-Powered Legal Advice Web App
 
 Welcome to LawGuru, your go-to platform for AI-powered legal advice and guidance!
+
+check out new version of this at https://github.com/ayuugoyal/lawgpt
+
 ## Authors: 
          Vaibhav 
          Sarthak Agarwal 
